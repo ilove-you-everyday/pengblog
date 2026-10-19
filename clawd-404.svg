@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" width="360" height="300" role="img" aria-label="Clawd 迷路了：404 页面未找到"><title>Clawd 迷路了：404 页面未找到</title><style>
+.clawd-404-fill{fill:var(--clawd-body,#D97757)}
+.clawd-404-eye{fill:var(--clawd-eye,#1F1E1D)}
+.clawd-404-blink{transform-box:fill-box;transform-origin:center;animation:clawd-404-blink 4.6s infinite}
+@keyframes clawd-404-blink{0%,89%,95%,100%{transform:scaleY(1)}92%{transform:scaleY(.1)}}
+
+.clawd-404-shadow{fill:var(--clawd-muted,#8A8272);opacity:.28}
+.clawd-404-ghost{fill:none;stroke:var(--clawd-ghost,rgba(128,118,100,.2));stroke-width:14;stroke-linejoin:miter;stroke-linecap:square}
+.clawd-404-digit{animation:clawd-404-bob 4s ease-in-out infinite}
+@keyframes clawd-404-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.clawd-404-tilt{transform-box:fill-box;transform-origin:50% 100%;animation:clawd-404-tilt 6s ease-in-out infinite}
+@keyframes clawd-404-tilt{0%,100%{transform:rotate(0)}22%{transform:rotate(-3deg)}48%{transform:rotate(3deg)}74%{transform:rotate(-1deg)}}
+.clawd-404-breathe{transform-box:fill-box;transform-origin:50% 100%;animation:clawd-404-breathe 3s ease-in-out infinite}
+@keyframes clawd-404-breathe{0%,100%{transform:scale(1.008,.988)}50%{transform:scale(.992,1.012)}}
+.clawd-404-look{animation:clawd-404-look 6s ease-in-out infinite}
+@keyframes clawd-404-look{0%,100%{transform:translateX(0)}22%{transform:translateX(-7px)}48%{transform:translateX(7px)}74%{transform:translateX(0)}}
+.clawd-404-scan{animation:clawd-404-scan 6s ease-in-out infinite}
+@keyframes clawd-404-scan{0%,100%{transform:rotate(-15deg)}25%{transform:rotate(-42deg)}50%{transform:rotate(-15deg)}75%{transform:rotate(-32deg)}}
+.clawd-404-hmm{animation:clawd-404-hmm 8s ease-in-out infinite}
+@keyframes clawd-404-hmm{0%,30%,78%,100%{transform:rotate(0)}38%,70%{transform:rotate(58deg)}}
+.clawd-404-lens-frame{fill:rgba(255,255,255,.35);stroke:#B5532F;stroke-width:5}
+.clawd-404-lens-handle{stroke:#B5532F;stroke-width:6;stroke-linecap:round}
+.clawd-404-lens-glint{fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;opacity:.9}
+.clawd-404-q{fill:var(--clawd-body,#D97757);font:800 30px ui-rounded,system-ui,-apple-system,"Segoe UI",sans-serif;text-anchor:middle;opacity:0;transform-box:fill-box;transform-origin:center;animation:clawd-404-q 3.6s ease-out infinite}
+@keyframes clawd-404-q{0%{opacity:0;transform:translateY(0) scale(.5)}18%{opacity:1}100%{opacity:0;transform:translateY(-38px) scale(1.15)}}
+.clawd-404-roll{animation:clawd-404-roll 10s linear infinite}
+@keyframes clawd-404-roll{0%{transform:translateX(-24px)}46%,100%{transform:translateX(390px)}}
+.clawd-404-spin{transform-box:fill-box;transform-origin:center;animation:clawd-404-spin 10s linear infinite;fill:none;stroke:var(--clawd-muted,#8A8272);stroke-width:2;stroke-linecap:round;opacity:.7}
+@keyframes clawd-404-spin{0%{transform:rotate(0)}46%,100%{transform:rotate(2300deg)}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-delay:0s!important;animation-iteration-count:1!important}}</style><g transform="translate(72 18)"><g class="clawd-404-digit"><path class="clawd-404-ghost" d="M42 0 L0 56 H60 M42 0 V82"/></g></g><g transform="translate(152 18)"><g class="clawd-404-digit" style="animation-delay:.7s"><rect class="clawd-404-ghost" x="0" y="0" width="56" height="82" rx="14"/></g></g><g transform="translate(228 18)"><g class="clawd-404-digit" style="animation-delay:1.4s"><path class="clawd-404-ghost" d="M42 0 L0 56 H60 M42 0 V82"/></g></g><ellipse class="clawd-404-shadow" cx="180" cy="249" rx="74" ry="7"/><g transform="translate(0 233)"><g class="clawd-404-roll"><g class="clawd-404-spin"><circle r="10"/><path d="M-10 0 Q0 -8 10 0 M-7 -7 Q0 3 7 7 M-7 7 Q0 -3 7 -7"/></g></g></g><g transform="translate(82 118) scale(1.4)"><g class="clawd-404-tilt"><g class="clawd-404-breathe"><rect class="clawd-404-fill" x="35" y="70" width="10" height="20"/><rect class="clawd-404-fill" x="50" y="70" width="10" height="20"/><rect class="clawd-404-fill" x="80" y="70" width="10" height="20"/><rect class="clawd-404-fill" x="95" y="70" width="10" height="20"/><g transform="translate(20 35)"><g class="clawd-404-hmm"><rect class="clawd-404-fill" x="-20" y="-10" width="20" height="20"/></g></g><g transform="translate(120 35)"><g class="clawd-404-scan"><rect class="clawd-404-fill" x="0" y="-10" width="20" height="20"/><line class="clawd-404-lens-handle" x1="20" y1="0" x2="30" y2="-6"/><circle class="clawd-404-lens-frame" cx="44" cy="-14" r="16"/><path class="clawd-404-lens-glint" d="M35 -20 A11 11 0 0 1 42 -26"/></g></g><rect class="clawd-404-fill" x="20" y="0" width="100" height="70"/><g class="clawd-404-look"><rect class="clawd-404-eye clawd-404-blink" x="45" y="20" width="10" height="20"/><rect class="clawd-404-eye clawd-404-blink" x="85" y="20" width="10" height="20"/></g></g></g></g><text class="clawd-404-q" x="138" y="112" style="animation-delay:0s">?</text><text class="clawd-404-q" x="182" y="112" style="animation-delay:1.2s">?</text><text class="clawd-404-q" x="226" y="112" style="animation-delay:2.4s">?</text></svg>

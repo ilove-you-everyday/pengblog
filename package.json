@@ -1,0 +1,17 @@
+{
+  "name": "halcyon-blog-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HALCYON interactive personal blog with Markdown-authored articles, floating navigation, Clawd motion and Twikoo comments",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs",
+    "build": "npm run check && node scripts/build.mjs"
+  },
+  "dependencies": {
+    "twikoo-vercel": "2.0.15"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#fbfbfa">
+  <meta name="robots" content="noindex,follow">
+  <title>404 · 页面没有找到 — HALCYON</title>
+  <link rel="icon" href="/assets/clawd-404.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/clawd-motions.css">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    body.not-found-body{margin:0!important;padding:0!important;min-height:100%;}
+    .not-found-page{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 22px calc(40px + env(safe-area-inset-bottom));}
+    .not-found-art{width:min(280px,68vw);border:0;background:none;cursor:pointer;padding:0;margin:0 auto 22px;touch-action:manipulation;}
+    .not-found-art img{display:block;width:100%;height:auto;transition:transform .25s ease;}
+    .not-found-art:hover img{transform:translateY(-5px) rotate(-2deg)}
+    .not-found-art.is-bouncing img{animation:missing-clawd-bounce .72s cubic-bezier(.25,.8,.25,1)}
+    @keyframes missing-clawd-bounce{0%,100%{transform:translateY(0) rotate(0)}30%{transform:translateY(-28px) rotate(-7deg)}55%{transform:translateY(0) rotate(5deg)}75%{transform:translateY(-8px) rotate(-2deg)}}
+    .not-found-code{font-size:clamp(64px,18vw,108px);font-weight:900;letter-spacing:-.09em;line-height:.9;margin:4px 0 18px;}
+    .not-found-title{font-size:clamp(20px,5vw,27px);font-weight:700;margin:0 0 10px;}
+    .not-found-copy{max-width:360px;color:var(--muted);font-size:13px;line-height:1.9;margin:0 auto 26px;}
+    .not-found-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:8px;}
+    .not-found-action{min-width:124px;padding:12px 18px;border:1px solid var(--line-strong);border-radius:999px;font-size:12px;transition:transform .2s,background .2s,color .2s;}
+    .not-found-action.primary{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+    .not-found-action:hover{transform:translateY(-2px)}
+    .not-found-action:focus:not(:focus-visible){outline:none;box-shadow:none}
+    .not-found-action{-webkit-tap-highlight-color:transparent}
+    .not-found-signature{position:absolute;bottom:calc(16px + env(safe-area-inset-bottom));font-size:10px;letter-spacing:.16em;color:var(--muted);}
+    @media(prefers-reduced-motion:reduce){.not-found-art.is-bouncing img{animation:none}.not-found-art:hover img,.not-found-action:hover{transform:none}}
+  </style>
+</head>
+<body class="not-found-body" data-theme="light">
+  <main class="not-found-page">
+    <button class="not-found-art" id="not-found-clawd" type="button" aria-label="点击让 Clawd 跳一下">
+      <img src="/assets/clawd-404.svg" alt="Clawd 吉祥物">
+    </button>
+    <p class="not-found-code">404</p>
+    <h1 class="not-found-title">好像走到了空白处。</h1>
+    <p class="not-found-copy">这个页面不存在，或者它已经搬家了。让 Clawd 带你回到熟悉的地方吧。</p>
+    <div class="not-found-actions">
+      <a class="not-found-action primary" href="/">回到首页 ↗</a>
+      <button class="not-found-action" id="not-found-back" type="button">返回上一页</button>
+    </div>
+    <span class="not-found-signature">HALCYON · A QUIET PLACE TO THINK</span>
+  </main>
+  <script>
+    const mascot=document.getElementById('not-found-clawd');
+    mascot.addEventListener('click',()=>{mascot.classList.remove('is-bouncing');void mascot.offsetWidth;mascot.classList.add('is-bouncing');});
+    document.getElementById('not-found-back').addEventListener('click',()=>{if(history.length>1)history.back();else location.assign('/');});
+    mascot.addEventListener('animationend',()=>mascot.classList.remove('is-bouncing'));
+  </script>
+</body>
+</html>
